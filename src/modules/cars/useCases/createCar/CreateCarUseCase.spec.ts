@@ -13,7 +13,7 @@ describe("Create Car", () => {
   });
 
   it("should be able to create a new car", async () => {
-    await createCraUsecase.execute({
+    const car = await createCraUsecase.execute({
       name: "Palio",
       description: "Carro popular",
       daily_rate: 100,
@@ -22,6 +22,8 @@ describe("Create Car", () => {
       brand: "Brand",
       category_id: "category",
     });
+
+    expect(car).toHaveProperty("id");
   });
 
   it("should not be abele to create a car with exists license plate", () => {
@@ -46,5 +48,19 @@ describe("Create Car", () => {
         category_id: "category",
       });
     }).rejects.toBeInstanceOf(AppError);
+  });
+
+  it("should not be abele to create a car with available true by default", async () => {
+    const car = await createCraUsecase.execute({
+      name: "Car available",
+      description: "Carro popular",
+      daily_rate: 100,
+      license_plate: "ABCD-1234",
+      fine_amount: 60,
+      brand: "Brand",
+      category_id: "category",
+    });
+
+    expect(car.available).toBe(true);
   });
 });
