@@ -1,7 +1,10 @@
-/node_modules
-/.vscode
-/coverage
-/dist
+node_modules
+.vscode
+tmp/*
+!tmp/.gitkeep
+coverage
+dist
+ormconfig.json
 
 yarn.lock
 .env
