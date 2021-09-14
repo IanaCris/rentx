@@ -32,6 +32,7 @@ jobs:
           passphrase: ${{ secrets.SSH_PASSPHRASE }}
           port: ${{ secrets.SSH_PORT }}
           source: "., !node_modules"
-          target: "test"
+          target: "~/app/rentx$
+"
       
 
