@@ -26,6 +26,7 @@ $ yarn # ou npm install
 ## 📌 Requisitos
 
 - **Cadastro de Carro**
+
     *Requisito Funcional:*
 
     - [x] Deve ser possivel cadastrar um novo carro
@@ -37,6 +38,7 @@ $ yarn # ou npm install
     - [x] O usuário responsável pelo cadastro deve ser um usuário administrador
 
 - **Listagem de Carros**
+
     *Requisito Funcional:*
 
     - [x] Deve ser possível listar todos os carros disponíveis
@@ -49,6 +51,7 @@ $ yarn # ou npm install
     - [x] O usuário não precisa estar logado no sistema
 
 - **Cadastro de Especificação do Carro**
+
     *Requisito Funcional:*
 
     - [x] Deve ser possível cadastrar uma especificação para um carro
@@ -60,6 +63,7 @@ $ yarn # ou npm install
     - [x] O usuário responsável pelo cadastro deve ser um usuário administrador
 
 - **Cadastro de imagens do carro**
+
     *Requisito Funcional:*
 
     - [x] Deve ser possível cadastrar a imagem do carro
@@ -71,6 +75,7 @@ $ yarn # ou npm install
     - [x] O usuário responsável pelo cadastro deve ser um usuário administrador
 
 - **Cadastro de Aluguel de carro**
+
     *Requisito Funcional:*
 
     - [x] Deve ser possível cadastrar um aluguel
@@ -84,6 +89,7 @@ $ yarn # ou npm install
     - [x] Ao realizar um aluguel, o status do carro deverá ser alterado para indisponível
 
 - **Devolução do carro de Aluguel**
+
     *Requisito Funcional:*
 
     - [x] Deve ser possível realizar a devolução de um carro de aluguel
@@ -99,6 +105,7 @@ $ yarn # ou npm install
     - [x] O usuário deve estar logado na aplicação
 
 - **Listagem de alugueis para o usuário**
+
     *Requisito Funcional:*
 
     - [x] Deve ser possível realizar a busca de todos os aluguéis para o usuário
@@ -108,6 +115,7 @@ $ yarn # ou npm install
     - [x] O usuário deve estar logado na aplicação
 
 - **Recuperar Senha**
+
     *Requisito Funcional:*
 
     - [x] Deve ser possível o usuario recuperar a senha informando o email
