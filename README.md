@@ -1,96 +1,120 @@
-# Cadastro de Carro
+# Rentx
 
-**RF** 
-Deve ser possivel cadastrar um novo carro.
+<h1 name="sobre">ℹ Sobre o Projeto</h1>
+Uma API em NodeJS que gerencia aluguéis de carros 🎯
 
-**RN** 
-Não deve ser possivel cadastrar um carro com uma placa já existente
-/*Não deve ser possível alterar a placa de um carro já cadastrado*/
-O carro deve ser cadastrado, por padrão com disponibilidade
-O usuário reposnsável pelo cadastro de ser um usuário administrador
+- ### **Pré-requisitos**
 
+  - É **necessário** possuir o **[Node.js](https://nodejs.org/en/)** instalado no computador
+  - É **necessário** possuir o **[Git](https://git-scm.com/)** instalado e configurado no computador
+  - Também, é **preciso** ter um gerenciador de pacotes seja o **[NPM](https://www.npmjs.com/)** ou **[Yarn](https://yarnpkg.com/)**.
 
-# Listagem de Carros
+```bash
+# Clone Repository
+$ git clone https://github.com/IanaCris/rentx.git
+```
 
-**RF**  
-Deve ser possível listar todos os carros disponíveis
-Deve ser possível listar todos os carros disponíveis pelo nome da categoria
-Deve ser possível listar todos os carros disponíveis pelo nome da marca
-Deve ser possível listar todos os carros disponíveis pelo nome do carro
+<h3 name='api'>📦 Instala as Dependências</h3><br>
 
-**RN**
-O usuário não precisa estar logado no sistema
+```bash
+# Vá até a pasta
+$ cd rentx
+# Instale as dependências
+$ yarn # ou npm install
+```
 
-# Cadastro de Especificação do Carro
+## 📌 Requisitos
 
-**RF**
-Deve ser possível cadastrar um especificação para um carro
+- **Cadastro de Carro**
+    *Requisito Funcional:*
 
-**RN**
-Não deve ser possível cadastrar uma especificação para um carro não cadastrado
-Não deve ser possível cadastrar uma especificação já existente para o mesmo carro
-O usuário responsável pélo cadastro deve ser um usuário administrador
+    - [x] Deve ser possivel cadastrar um novo carro
 
+    *Requisito Não Funcional:*
+    
+    - [x] Não deve ser possivel cadastrar um carro com uma placa já existente
+    - [x] O carro deve ser cadastrado, por padrão com disponibilidade 
+    - [x] O usuário responsável pelo cadastro deve ser um usuário administrador
 
-# Cadastro de imagens do carro
+- **Listagem de Carros**
+    *Requisito Funcional:*
 
-**RF**
-Deve ser possível cadastrar a imagem do carro
+    - [x] Deve ser possível listar todos os carros disponíveis
+    - [x] Deve ser possível listar todos os carros disponíveis pelo nome da categoria
+    - [x] Deve ser possível listar todos os carros disponíveis pelo nome da marca 
+    - [x] Deve ser possível listar todos os carros disponíveis pelo nome do carro
 
-**RNF**
-Utilizar o multer para upload dos arquivos
+    *Requisito Não Funcional:*
 
-**RN**
-O usuário deve poder cadastrar mais de uma imagem para o mesmo carro
-O usuário responsável pelo cadastro deve ser um usuário administrador
+    - [x] O usuário não precisa estar logado no sistema
 
+- **Cadastro de Especificação do Carro**
+    *Requisito Funcional:*
 
-# Cadastro de Aluguel de carro
+    - [x] Deve ser possível cadastrar uma especificação para um carro
 
-**RF**
-Deve ser possível cadastrar um aluguel
+    *Requisito Não Funcional:*
 
-**RN**
-O aluguel deve ter duração mínima de 24 horas
-Não deve ser possível cadastrar um novo aluguel caso já exista um aberto para o mesmo usuário
-Não deve ser possível cadastrar um novo aluguel caso já exista um aberto para o mesmo carro
-O usuário deve estar logado na aplicação
-Ao realizar um aluguel, o status do carro deverá ser alterado para indisponível
+    - [x] Não deve ser possível cadastrar uma especificação para um carro não cadastrado
+    - [x] Não deve ser possível cadastrar uma especificação já existente para o mesmo carro
+    - [x] O usuário responsável pelo cadastro deve ser um usuário administrador
 
+- **Cadastro de imagens do carro**
+    *Requisito Funcional:*
 
+    - [x] Deve ser possível cadastrar a imagem do carro
 
-# Devolução do carro de Aluguel
+    *Requisito Não Funcional:*
 
-**RF**
-Deve ser possível realizar a devolução de um carro de aluguel
+    - [x] Utilizar o multer para upload dos arquivos
+    - [x] O usuário deve poder cadastrar mais de uma imagem para o mesmo carro
+    - [x] O usuário responsável pelo cadastro deve ser um usuário administrador
 
-**RN**
-Se o carro for devolvido com menos de 24 horas, deverá ser cobrado diária completa.
-Ao realizar a devolução, o carro deverá ser liberado para outro aluguel.
-Ao realizar a devolução, o usuário deverá ser liberado para outro aluguel.
-Ao realizar a devolução, deverá ser calculado o total do aluguel.
-Caso o horário de devolução seja supeiro ao horário previsto de entrega, deverá ser cobrado multa proporcional aos dias de atraso.
-Caso haja multa, deverá ser somado ao total do aluguel.
-O usuário deve estar logado na aplicação
+- **Cadastro de Aluguel de carro**
+    *Requisito Funcional:*
 
+    - [x] Deve ser possível cadastrar um aluguel
 
+    *Requisito Não Funcional:*
 
-# Listagem de alugueis para por usuário
+    - [x] O aluguel deve ter duração mínima de 24 horas
+    - [x] Não deve ser possível cadastrar um novo aluguel caso já exista um aberto para o mesmo usuário
+    - [x] Não deve ser possível cadastrar um novo aluguel caso já exista um aberto para o mesmo carro
+    - [x] O usuário deve estar logado na aplicação
+    - [x] Ao realizar um aluguel, o status do carro deverá ser alterado para indisponível
 
-**RF**
-Deve ser possível realizar a busca de todos os aluguéis para o usuário
+- **Devolução do carro de Aluguel**
+    *Requisito Funcional:*
 
-**RN**
-O usuário deve estar logado na aplicação
+    - [x] Deve ser possível realizar a devolução de um carro de aluguel
 
+    *Requisito Não Funcional:*
 
-# Recuperaar Senha
+    - [x] Se o carro for devolvido com menos de 24 horas, deverá ser cobrado diária completa
+    - [x] Ao realizar a devolução, o carro deverá ser liberado para outro aluguel
+    - [x] Ao realizar a devolução, o usuário deverá ser liberado para outro aluguel
+    - [x] Ao realizar a devolução, deverá ser calculado o total do aluguel
+    - [x] Caso o horário de devolução seja supeiro ao horário previsto de entrega, deverá ser cobrado multa proporcional aos dias de atraso
+    - [x] Caso haja multa, deverá ser somado ao total do aluguel.
+    - [x] O usuário deve estar logado na aplicação
 
-**RF**
-Deve ser possível o usuario recuperar a senha informando o email
-O usuario deve receber um email com o passo a passo para a recuperação da senha
-O usuario deve conseguir inserir uma nova senha
+- **Listagem de alugueis para o usuário**
+    *Requisito Funcional:*
 
-**RN**
-O usuário precisa informar uma nova senha
-O link enviado para a recuperação deve expirar em 3 horas
+    - [x] Deve ser possível realizar a busca de todos os aluguéis para o usuário
+
+    *Requisito Não Funcional:*
+    
+    - [x] O usuário deve estar logado na aplicação
+
+- **Recuperar Senha**
+    *Requisito Funcional:*
+
+    - [x] Deve ser possível o usuario recuperar a senha informando o email
+    - [x] O usuario deve receber um email com o passo a passo para a recuperação da senha
+    - [x] O usuario deve conseguir inserir uma nova senha
+
+    *Requisito Não Funcional:*
+    
+    - [x] O usuário precisa informar uma nova senha
+    - [x] O link enviado para a recuperação deve expirar em 3 horas
