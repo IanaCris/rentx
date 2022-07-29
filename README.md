@@ -104,7 +104,7 @@ $ yarn # ou npm install
     - [x] Caso haja multa, deverá ser somado ao total do aluguel.
     - [x] O usuário deve estar logado na aplicação
 
-- **Listagem de alugueis para o usuário**
+- **Listagem de aluguéis para o usuário**
 
     *Requisito Funcional:*
 
@@ -118,9 +118,9 @@ $ yarn # ou npm install
 
     *Requisito Funcional:*
 
-    - [x] Deve ser possível o usuario recuperar a senha informando o email
-    - [x] O usuario deve receber um email com o passo a passo para a recuperação da senha
-    - [x] O usuario deve conseguir inserir uma nova senha
+    - [x] Deve ser possível o usuário recuperar a senha informando o email
+    - [x] O usuário deve receber um email com o passo a passo para a recuperação da senha
+    - [x] O usuário deve conseguir inserir uma nova senha
 
     *Requisito Não Funcional:*
     
