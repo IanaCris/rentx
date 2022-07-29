@@ -1,5 +1,13 @@
-import { Column, CreateDateColumn, Entity, JoinColumn, ManyToOne, PrimaryColumn } from "typeorm";
-import {v4 as uuidV4} from "uuid";
+import {
+  Column,
+  CreateDateColumn,
+  Entity,
+  JoinColumn,
+  ManyToOne,
+  PrimaryColumn,
+} from "typeorm";
+import { v4 as uuidV4 } from "uuid";
+
 import { User } from "./User";
 
 @Entity("users_tokens")
@@ -21,7 +29,7 @@ class UserTokens {
   expires_date: Date;
 
   @CreateDateColumn()
-  created_at: Date
+  created_at: Date;
 
   constructor() {
     if (!this.id) {
